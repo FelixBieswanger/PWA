@@ -7,7 +7,7 @@ if ("serviceWorker" in navigator) {
 //Application Stuff
 var id = window.location.search.replace("?", "").replace("=", "");
 var source_simulation = new EventSource(
-  "http://192.168.178.142:2222/" + id + "/stream"
+  "https://192.168.178.142:2222/" + id + "/stream"
 );
 
 source_simulation.onopen = function (e) {
