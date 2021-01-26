@@ -5,7 +5,7 @@ if ("serviceWorker" in navigator) {
 }
 
 //Application Stuff
-var id = window.location.pathname;
+var id = window.location.pathname.split("/")[2];
 var source_simulation = new EventSource(
   "http://localhost:2222/" + id + "/stream"
 );
