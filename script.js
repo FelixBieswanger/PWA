@@ -4,6 +4,8 @@ if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("serviceworker.js");
 }
 
+/*
+
 //Application Stuff
 var id = window.location.search.replace("?", "").replace("=", "");
 var source_simulation = new EventSource(
@@ -23,3 +25,5 @@ source_simulation.addEventListener("message", function (e) {
 
   document.getElementById("data").innerHTML = message;
 });
+
+*/
