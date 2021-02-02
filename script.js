@@ -15,6 +15,11 @@ if ("serviceWorker" in navigator) {
 //Chart
 
 $(document).ready(function () {
+  $(".button").click(function () {
+    console.log("hier");
+    $(this).closest(".card").fadeOut(300);
+  });
+
   var ctx = document.getElementById("myChart").getContext("2d");
   chart = new Chart(ctx, {
     // The type of chart we want to create
